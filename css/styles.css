@@ -1,0 +1,265 @@
+/*загальні*/
+
+:root { 
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --logo-color: #000;
+    --accent-color: #2196F3;
+    --color-hero: #FFFFFF;
+    --header-color: #fff;
+    --button-color: #fff;
+    --hover-button-color: #188CE8;
+    --primary-background-color: #E5E5E5;
+    --accent-background-color: #2F303A;
+    --accent-section-color: #F5F4FA;
+    --text-footer-color: rgba(255, 255, 255, 0.6);
+    --accent-footer-color: #fff;
+    --border-bottom-color: #ECECEC;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.characteristic .title,
+.essential .title,
+.team .title,
+.team .people,
+.example .subtitle {
+    color: var(--title-text-color);
+    font-weight: 700;
+}
+
+.invisible {
+    opacity: 0;
+}
+
+ /*шапка*/
+.header {
+    width: 1600px;
+    height: 80px;
+    background: var(--header-color);
+    border-bottom: 1px solid var(--border-bottom-color);
+
+}
+
+.logo {
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+.accent {
+    color: var(--accent-color); 
+}
+
+.text {
+    color: var(--logo-color);  
+}
+
+.list {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.site-nav .link {
+    color: var(--title-text-color);  
+}
+
+.contacts .link {
+    color: inherit;
+}
+.site-nav .link:hover,
+.site-nav .link:focus,
+.site-nav .link.current,
+.contacts .link:hover,
+.contacts .link:focus {
+    color: var(--accent-color);
+}
+
+/*перша секція*/
+
+.hero {
+    width: 1600px;
+    height: 600px;
+    background-color: var(--accent-background-color);
+}
+
+.hero .main {
+    width: 696px;
+    height: 120px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    color: var(--color-hero);
+    text-transform: uppercase; 
+    text-align: center;
+}
+
+.hero .button {
+    background-color: var(--accent-color);
+    border-radius: 4px;
+    color: var(--color-hero);
+    width: 200px;
+    height: 50px;
+    border: 0;
+    font-weight: 700;
+    line-height: 1.88;
+    cursor: pointer;
+ }
+
+ .hero .button:hover,
+ .hero .button:focus {
+    background-color: var(--hover-button-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+ }
+
+ /*друга секцiя*/
+
+.characteristic .title {
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.characteristic .point {
+    line-height: 1.71;
+}
+
+/*третя секцiя*/
+
+   
+.essential .title {
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+
+/*четверта секцiя*/
+.team {
+    background: var(--accent-section-color);
+}
+
+.team .title {
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.team .people {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
+.team .texts {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
+ /*підвал*/
+.footer {
+    background-color: var(--accent-background-color);
+}
+
+.footer .text {
+    color: var(--accent-footer-color);
+}
+
+.footer .address {  
+    line-height: 1.71;
+}
+
+.footer .fact {
+    color: var(--accent-footer-color);
+    text-decoration: none;
+    font-style: normal;
+
+}
+
+.footer .mail,
+.footer .tel {
+    color: var(--text-footer-color);
+    text-decoration: none;
+    font-style: normal;
+}
+
+.footer .mail:hover,
+.footer .mail:focus,
+.footer .tel:hover,
+.footer .tel:focus {
+    color: var(--accent-color);
+}
+ 
+/* портфоліо*/
+
+.portfolio .buttons {
+    display: flex;
+    text-align: center; 
+} 
+
+.buttons .port-btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63; 
+    background-color: var(--accent-section-color);
+    border-radius: 4px;
+    border: 0;
+    height: 38px;
+    cursor: pointer;
+}
+
+.buttons .port-btn:hover,
+.buttons .port-btn:focus {
+    background: var(--accent-color);
+    color: var(--button-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.button-all {
+    width: 73px;
+}
+
+.button-veb {
+    width: 128px;
+}
+
+.button-app {
+    width: 145px;
+}
+
+.button-des {
+    width: 103px;
+}
+
+.button-mar {
+    width: 130px;
+}
+
+.example .subtitle {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.example .lists {
+    color: var(--primary-text-color);
+    font-size: 16px;
+    line-height: 1.88;
+}
