@@ -1,34 +1,34 @@
-/*загальні*/
+
+/*=====ЗАГАЛЬНІ=====*/
 
 :root { 
     --primary-text-color: #757575;
     --title-text-color: #212121;
-    --logo-color: #000;
+    --logo-color: #000000;
     --accent-color: #2196F3;
-    --color-hero: #FFFFFF;
-    --header-color: #fff;
-    --button-color: #fff;
+    --secondary-accent-color: #ffffff;
     --hover-button-color: #188CE8;
     --primary-background-color: #E5E5E5;
     --accent-background-color: #2F303A;
     --accent-section-color: #F5F4FA;
     --text-footer-color: rgba(255, 255, 255, 0.6);
-    --accent-footer-color: #fff;
-    --border-bottom-color: #ECECEC;
+    --border-bottom-color: #ECECEC;  
+    --primary-text-family: Roboto, sans-serif;
+    --accent-text-family: Raleway, sans-serif;
 }
 
 body {
-    font-family: Roboto, sans-serif;
+    font-family: var(--primary-text-family);
     font-size: 14px;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
 }
 
-ul {
+.list {
     list-style: none;
 }
 
-a {
+.link {
     text-decoration: none;
 }
 
@@ -47,15 +47,13 @@ a {
 
  /*шапка*/
 .header {
-    width: 1600px;
-    height: 80px;
-    background: var(--header-color);
+    background: var(--secondary-accent-color);
     border-bottom: 1px solid var(--border-bottom-color);
 
 }
 
 .logo {
-    font-family: Raleway, sans-serif;
+    font-family: var(--accent-text-family);
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
@@ -69,7 +67,8 @@ a {
     color: var(--logo-color);  
 }
 
-.list {
+.site-nav,
+.contacts {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -79,14 +78,15 @@ a {
     color: var(--title-text-color);  
 }
 
-.contacts .link {
+.contacts .contacts-link {
     color: inherit;
 }
-.site-nav .link:hover,
-.site-nav .link:focus,
+
 .site-nav .link.current,
-.contacts .link:hover,
-.contacts .link:focus {
+.site-nav .site-nav-link:hover,
+.site-nav .site-nav-link:focus,
+.contacts .contacts-link:hover,
+.contacts .contacts-link:focus {
     color: var(--accent-color);
 }
 
@@ -105,7 +105,7 @@ a {
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
-    color: var(--color-hero);
+    color: var(--secondary-accent-color);
     text-transform: uppercase; 
     text-align: center;
 }
@@ -113,7 +113,7 @@ a {
 .hero .button {
     background-color: var(--accent-color);
     border-radius: 4px;
-    color: var(--color-hero);
+    color: var(--secondary-accent-color);
     width: 200px;
     height: 50px;
     border: 0;
@@ -179,7 +179,7 @@ a {
 }
 
 .footer .text {
-    color: var(--accent-footer-color);
+    color: var(--secondary-accent-color);
 }
 
 .footer .address {  
@@ -187,7 +187,7 @@ a {
 }
 
 .footer .fact {
-    color: var(--accent-footer-color);
+    color: var(--secondary-accent-color);
     text-decoration: none;
     font-style: normal;
 
@@ -228,28 +228,8 @@ a {
 .buttons .port-btn:hover,
 .buttons .port-btn:focus {
     background: var(--accent-color);
-    color: var(--button-color);
+    color: var(--secondary-accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-.button-all {
-    width: 73px;
-}
-
-.button-veb {
-    width: 128px;
-}
-
-.button-app {
-    width: 145px;
-}
-
-.button-des {
-    width: 103px;
-}
-
-.button-mar {
-    width: 130px;
 }
 
 .example .subtitle {
