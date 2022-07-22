@@ -120,6 +120,12 @@ body {
     background-color: var(--accent-color);
     border-radius: 4px;
     color: var(--secondary-accent-color);
+    font-family: var(--primary-text-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
     width: 200px;
     height: 50px;
     border: 0;
@@ -138,6 +144,7 @@ body {
  /*=====ДРУГА СЕКЦІЯ ХАРАКТЕРИСТИКИ=====*/
 
 .characteristic .title {
+    font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
 }
@@ -154,6 +161,7 @@ body {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+    letter-spacing: 0.03em;
 }
 
 
@@ -168,6 +176,7 @@ body {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+    letter-spacing: 0.03em;
 }
 
 .team .people {
